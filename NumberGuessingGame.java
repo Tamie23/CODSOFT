@@ -1,32 +1,36 @@
-import java.util.Random;
 import java.util.Scanner;
 
-public class NumberGuessingGame {
+public class NumberGame {
 
     public static void main(String[] args) {
 
-        Random rand = new Random();
+        int randomNumber = 50; 
+        int maxTries = 8;      
+        int tryCount = 0;
 
-        
         try (Scanner scanner = new Scanner(System.in)) {
-            int randomNumber = rand.nextInt(100) + 1;
-            int tryCount = 0;
+            System.out.println("Welcome to the Number Guessing Game!");
+            System.out.println("Try to guess the number (between 1 and 100). You have " + maxTries + " tries.");
 
-            while(true) {
-                System.out.println("Enter your guess (1-100):");
-                int playerNumberGuess = scanner.nextInt();
+            while (tryCount < maxTries) {
+                System.out.print("Enter your guess: ");
+                int userNumberGuess = scanner.nextInt();
                 tryCount++;
 
-                if (playerNumberGuess == randomNumber) {
-                    System.out.println("This is correct! You Win! Congratulations");
-                    System.out.println("It took you " + tryCount + " tries");
+                if (userNumberGuess == randomNumber) {
+                    System.out.println("Congratulations! You are correct!");
+                    System.out.println("It took you " + tryCount + " tries.");
                     break;
-                } else if (randomNumber > playerNumberGuess) {
-                    System.out.println("The number is higher. Guess again.");
+                } else if (userNumberGuess < randomNumber) {
+                    System.out.println("The number is higher. Try again.");
                 } else {
-                    System.out.println("The number is lower. Guess again.");
+                    System.out.println("The number is lower. Try again.");
+                }
+
+                if (tryCount == maxTries) {
+                    System.out.println("Your tries are up! Better luck next time.");
                 }
             }
-        } 
+        }
     }
 }

@@ -15,3 +15,5 @@ average percentage.
 Grade Calculation: Assign grades based on the average percentage achieved.
 Display Results: Show the total marks, average percentage, and the corresponding grade to the user
 
+Installation
+Run File Using Visual Studio Code or any java application

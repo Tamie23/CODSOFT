@@ -1,5 +1,7 @@
+Please see below the description for tasks completed during my Internship at Codsoft
+
 Codsoft_taskno1
-TASK 1 NUMBER GAME
+TASK 1: Number Game
  	A random number was selected within a specified range, such as 1 to 100.
   The user will be prompted to enter their guess for the generated number.
   The user's guess will be compared with the generated number and feedback will be provided on whether the guess is correct, too high, or too low.

@@ -4,13 +4,13 @@ Codsoft_taskno1
 
 TASK 1: Number Game
 
- 	A random number was selected within a specified range, such as 1 to 100.
+A random number was selected within a specified range, such as 1 to 100.
   
-  The user will be prompted to enter their guess for the generated number.
+The user will be prompted to enter their guess for the generated number.
   
-  The user's guess will be compared with the generated number and feedback will be provided on whether the guess is correct, too high, or too low.
+The user's guess will be compared with the generated number and feedback will be provided on whether the guess is correct, too high, or too low.
   
-  Steps 2 and 3 will be repeated until the user guesses the correct number.
+Steps 2 and 3 will be repeated until the user guesses the correct number.
 
 
 Codsoft_taskno2
@@ -25,6 +25,7 @@ Calculate Average Percentage: Divide the total marks by the total number of subj
 average percentage.
 
 Grade Calculation: Assign grades based on the average percentage achieved.
+
 Display Results: Show the total marks, average percentage, and the corresponding grade to the user
 
 
@@ -50,5 +51,7 @@ balance.
 7. Display appropriate messages to the user based on their chosen options and the success or failure
 of their transactions.
 
+
 Installation
+
 Run File Using Visual Studio Code or any java application
